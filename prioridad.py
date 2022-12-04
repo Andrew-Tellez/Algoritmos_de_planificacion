@@ -37,11 +37,12 @@ while (len(lista_de_procesos)>0):
 	if len(procesos_en_cola) > 1:
 		max_prioridad = max([p.prioridad for p in procesos_en_cola])
 		proceso_prioritario = list(filter( lambda p: p.prioridad == max_prioridad, procesos_en_cola))
-		
+		print(procesos_en_cola)
 		print(f"\nProceso {proceso_prioritario[0].name} de la llegada {proceso_prioritario[0].llegada} y prioridad {proceso_prioritario[0].prioridad} terminado\n")
 		tiempo += proceso_prioritario[0].requerido
 		lista_de_procesos.remove(proceso_prioritario[0])
 	else:
+		print(procesos_en_cola)
 		print(f"\nProceso {procesos_en_cola[0].name} de la llegada {procesos_en_cola[0].llegada} y prioridad {procesos_en_cola[0].prioridad} terminado\n")
 		tiempo += procesos_en_cola[0].requerido
 		lista_de_procesos.remove(procesos_en_cola[0])
