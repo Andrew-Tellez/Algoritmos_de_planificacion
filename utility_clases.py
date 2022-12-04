@@ -6,4 +6,4 @@ class Proceso:
     self.prioridad = prioridad
 
   def __repr__(self) -> str:
-    return f"""{self.name} {self.requerido}"""
+    return f"""N: {self.name} R: {self.requerido} P: {self.prioridad}"""
