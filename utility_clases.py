@@ -1,5 +1,5 @@
 class Proceso:
-  def __init__(self, name:str , requerido:int, llegada:int, prioridad=0) -> None:
+  def __init__(self, name:str , requerido:int, llegada:int=0, prioridad=0) -> None:
     self.name = name
     self.llegada = llegada
     self.requerido = requerido
